@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node 17",
+
+	"compilerOptions": {
+		"lib": ["dom", "es2021"],
+		"types": ["node"],
+		"module": "commonjs",
+		"target": "es2021",
+		"noEmit": false,
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"strictNullChecks": true,
+		"sourceMap": true,
+		"inlineSourceMap": false,
+		"inlineSources": true,
+		"declaration": false
+	},
+	"ts-node": {
+		"transpileOnly": true,
+		"transpiler": "ts-node/transpilers/swc-experimental"
+	}
+}

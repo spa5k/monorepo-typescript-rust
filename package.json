@@ -1,0 +1,39 @@
+{
+	"name": "core",
+	"description": "Yarn v3 berry based monorepo workspace, configured with eslint,tsconfig etc",
+	"devDependencies": {
+		"@types/eslint": "^8.2.1",
+		"@types/prettier": "^2",
+		"@yarnpkg/sdks": "^2.5.1-rc.6",
+		"dprint": "^0.19.1",
+		"eslint": "^8.5.0",
+		"husky": "^7.0.0",
+		"pinst": "^2.0.0",
+		"prettier": "^2.5.1",
+		"typescript": "^4.5.4"
+	},
+	"scripts": {
+		"athena": "yarn workspace @core/athena",
+		"format": "yarn dprint fmt",
+		"gaia": "yarn workspace @core/gaia",
+		"lint": "yarn workspaces foreach -p --since run lint",
+		"logger": "yarn workspace @core/logger",
+		"postinstall": "yarn sdks vscode && husky install",
+		"postpublish": "pinst --enable",
+		"prepublishOnly": "pinst --disable",
+		"ui": "yarn workspace @core/ui"
+	},
+	"workspaces": [
+		"apps/athena",
+		"apps/gaia",
+		"apps/web",
+		"libs/logger",
+		"libs/ui"
+	],
+	"dependenciesMeta": {
+		"next@12.0.7": {
+			"unplugged": true
+		}
+	},
+	"packageManager": "yarn@3.1.1"
+}

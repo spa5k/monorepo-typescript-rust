@@ -1,0 +1,35 @@
+{
+	"search.exclude": {
+		"**/.yarn": true,
+		"**/.pnp.*": true
+	},
+	"eslint.nodePath": ".yarn/sdks",
+	"typescript.tsdk": ".yarn/sdks/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+	"editor.defaultFormatter": "dprint.dprint",
+	"[javascript]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[toml]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "dprint.dprint"
+	},
+	"conventionalCommits.scopes": [
+		"main"
+	]
+}
