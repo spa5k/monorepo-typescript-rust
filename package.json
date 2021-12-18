@@ -2,6 +2,8 @@
 	"name": "core",
 	"description": "Yarn v3 berry based monorepo workspace, configured with eslint,tsconfig etc",
 	"devDependencies": {
+		"@commitlint/cli": "^15.0.0",
+		"@commitlint/config-conventional": "^15.0.0",
 		"@types/eslint": "^8.2.1",
 		"@types/prettier": "^2",
 		"@yarnpkg/sdks": "^2.5.1-rc.6",
@@ -35,5 +37,10 @@
 			"unplugged": true
 		}
 	},
-	"packageManager": "yarn@3.1.1"
+	"packageManager": "yarn@3.1.1",
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	}
 }

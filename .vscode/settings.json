@@ -30,6 +30,7 @@
 		"editor.defaultFormatter": "dprint.dprint"
 	},
 	"conventionalCommits.scopes": [
-		"main"
+		"main",
+		"commit"
 	]
 }
