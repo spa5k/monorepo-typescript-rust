@@ -2,14 +2,10 @@
 
 Yarn v3 based monorepo with essential configs and things.
 
-## Installation
+## Info -
 
-Install it with yarn
-
-```bash
-yarn
-yarn gaia dev
-```
+- Athena - Frontend Vite App
+- Gaia - Backend Rust Server
 
 ## Authors
 

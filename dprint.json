@@ -16,7 +16,8 @@
 		"**/*-lock.json",
 		".yarn",
 		".pnp.cjs",
-		".pnp.loader.mjs"
+		".pnp.loader.mjs",
+		"/target/**"
 	],
 	"plugins": [
 		"https://plugins.dprint.dev/typescript-0.60.0.wasm",
