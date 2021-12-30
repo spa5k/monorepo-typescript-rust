@@ -67,12 +67,14 @@ importers:
       eslint: 8.5.0
       eslint-config-next: 12.0.7
       next: 12.0.7
+      next-transpile-modules: ^9.0.0
       react: 17.0.2
       react-dom: 17.0.2
       typescript: 4.5.4
     dependencies:
       '@core/ui': link:../../libs/ui
       next: 12.0.7_react-dom@17.0.2+react@17.0.2
+      next-transpile-modules: 9.0.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
@@ -2251,6 +2253,14 @@ packages:
       once: 1.4.0
     dev: true
 
+  /enhanced-resolve/5.8.3:
+    resolution: {integrity: sha512-EGAbGvH7j7Xt2nc0E7D99La1OiEs8LnyimkRgwExpUMScN6O+3x9tIWs7PLQZVNx4YD+00skHXPXi1yQHpAmZA==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      graceful-fs: 4.2.8
+      tapable: 2.2.1
+    dev: false
+
   /enquirer/2.3.6:
     resolution: {integrity: sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg==}
     engines: {node: '>=8.6'}
@@ -3830,6 +3840,13 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
+  /next-transpile-modules/9.0.0:
+    resolution: {integrity: sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ==}
+    dependencies:
+      enhanced-resolve: 5.8.3
+      escalade: 3.1.1
+    dev: false
+
   /next/12.0.7_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-sKO8GJJYfuk9c+q+zHSNumvff+wP7ufmOlwT6BuzwiYfFJ61VTTkfTcDLSJ+95ErQJiC54uS4Yg5JEE8H6jXRA==}
     engines: {node: '>=12.22.0'}
@@ -4940,6 +4957,11 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       has-flag: 4.0.0
+    dev: false
+
+  /tapable/2.2.1:
+    resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
+    engines: {node: '>=6'}
     dev: false
 
   /tar/6.1.11:

@@ -28,7 +28,8 @@
 	"conventionalCommits.scopes": [
 		"main",
 		"commit",
-		"@gaia"
+		"@gaia",
+		"next"
 	],
 	"[yaml]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
