@@ -5,5 +5,5 @@
 eval $(fnm env | sed 1d)
 export PATH=$(cygpath $FNM_MULTISHELL_PATH):$PATH
 
-yarn format
-yarn lint
+pnpm format
+pnpm lint

@@ -1,0 +1,21 @@
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld.exe"
+rustflags = ["-Zshare-generics=n"]
+
+[target.x86_64-pc-windows-gnu]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "linker=clang", "-C", "link-arg=-fuse-ld=lld"]
+
+[build]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+# Enable incremental compilation
+[profile.dev]
+incremental = true
+
+[profile.release]
+debug = 1
+incremental = true
+lto = "off"

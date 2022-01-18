@@ -14,10 +14,11 @@
 	"excludes": [
 		"**/node_modules",
 		"**/*-lock.json",
-		".yarn",
-		".pnp.cjs",
-		".pnp.loader.mjs",
-		"/target/**"
+		"**/.next",
+		"**/.turbo",
+		"**/dist",
+		"pnpm-lock.yaml",
+		"**/target"
 	],
 	"plugins": [
 		"https://plugins.dprint.dev/typescript-0.60.0.wasm",

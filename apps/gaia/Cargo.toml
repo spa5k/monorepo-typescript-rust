@@ -5,9 +5,41 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-actix-web = "3.3.3"
+[lib]
+path = "src/lib.rs"
 
-# Enable incremental compilation
-[profile.dev]
-incremental = true
+[[bin]]
+path = "src/main.rs"
+name = "gaia"
+
+[dependencies]
+actix-web = "=4.0.0-beta.20"
+anyhow = "1.0.52"
+base64 = "0.13.0"
+chrono = "0.4.19"
+config = { version = "0.11", default-features = false, features = ["yaml"] }
+rand = { version = "0.8", features = ["std_rng"] }
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls", "cookies"] }
+secrecy = { version = "0.8", features = ["serde"] }
+serde = "1.0.133"
+serde-aux = "3"
+serde_json = "1.0.75"
+sqlx = { version = "0.5.10", default-features = false, features = ["runtime-actix-rustls", "macros", "postgres", "uuid", "chrono", "migrate", "offline"] }
+thiserror = "1.0.30"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1.29"
+tracing-actix-web = "=0.5.0-beta.10"
+tracing-bunyan-formatter = "0.3"
+tracing-log = "0.1.2"
+tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
+uuid = { version = "0.8.2", features = ["v4", "serde"] }
+
+[dev-dependencies]
+claim = "0.5.0"
+fake = "2.4.3"
+linkify = "0.8.0"
+once_cell = "1.9.0"
+quickcheck = "1.0.3"
+quickcheck_macros = "1"
+serde_json = "1.0.75"
+wiremock = "0.5"
