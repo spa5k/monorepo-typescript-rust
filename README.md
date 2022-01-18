@@ -57,16 +57,16 @@ cargo install cargo-watch
 ## Want to run other commands for some specific package?
 
 ```sh
-pnpm package <command>
+pnpm <package> <command>
 ```
 
-Example -
+  Example -
 
-Run lint in Athena
+  Run lint in Athena
 
-```sh
-pnpm athena lint
-```
+  ```sh
+  pnpm athena lint
+  ```
 
 ## Authors
 
