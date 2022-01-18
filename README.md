@@ -17,6 +17,10 @@ All packages/apps needs to be started with `@core`/package-name in order to keep
 ```sh
 pnpm install
 ```
+To run the @gaia crate
+```sh
+cargo install cargo-watch 
+```
 
 ## Usage
 
@@ -45,6 +49,7 @@ pnpm install
 ### Gaia - Backend Rust Server using actix-web
 
 - Directly
+
   ```
   pnpm gaia:dev
   ```
